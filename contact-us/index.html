@@ -314,7 +314,10 @@
 												</select></div>
 											</div>
 											<div class="fieldsets"><textarea placeholder="Message" name="message"></textarea></div>
-											 
+											<button class="g-recaptcha" 
+											data-sitekey="6LdJBx4eAAAAAOLApBtLiVAu0oBPt-uCRsvNBoPj" 
+											data-callback='onSubmit' 
+											data-action='submit'>Submit</button>
 											<div class="fieldsets mt20"> <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 w-100">Send your inquiry <i class="fas fa-arrow-right fa-btn"></i></button> </div>
 											<p class="trm"><i class="fas fa-lock"></i>We hate spam, and we respect your privacy.</p>
 											
@@ -395,6 +398,13 @@
 		   </div>
 		</div>
 	 </footer>
+	 
+	 <script>
+		function onSubmit(token) {
+		  document.getElementById("demo-form").submit();
+		}
+	  </script>
+	 <script src="https://www.google.com/recaptcha/api.js"></script>
    <script src="../js/jquery-3.6.0.min.js"></script>
 	 <script src="../js/bootstrap.bundle.min.js"></script>
 	 <script src="../js/app.bundle.js"></script>	
